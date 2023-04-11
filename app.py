@@ -4,7 +4,7 @@ import streamlit as st
 import altair as alt
 import duckdb
 
-con = duckdb.connect(database='Job.db', read_only=True) 
+con = duckdb.connect(database='job.db', read_only=True) 
 
 # Countries
 query="""
@@ -35,7 +35,7 @@ with col2:
 result_df = con.execute("""
     SELECT 
         *
-    FROM Job 
+    FROM job 
     WHERE variable=?
     """, [kind]).df()
 
