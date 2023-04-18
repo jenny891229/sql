@@ -3,7 +3,6 @@ import streamlit as st
 
 import altair as alt
 import duckdb
-%duckdb -m
 
 con = duckdb.connect(database='job.db', read_only=True) 
 
