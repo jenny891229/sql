@@ -1,2 +1,2 @@
-dockdb
+duckdb
 altair
