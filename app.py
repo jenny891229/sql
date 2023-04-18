@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 import altair as alt
-import duckdb
+-m pip! duckdb
 
 con = duckdb.connect(database='job.db', read_only=True) 
 
